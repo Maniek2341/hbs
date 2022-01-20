@@ -1,0 +1,356 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="HelpBox, System ratunkowy, skrzynie ratunkowe">
+    <meta name="description" content="Help Box to stworzony przez firmę HBS Polska Sp. z o.o. system skrzyń ratunkowych, którego celem jest rozwiązanie narastającego problemu utonięć w Polsce, poprzez dostarczanie kompleksowych rozwiązań technologicznych oraz sprzętu ratowniczego.">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Help Box System - Innowacyjny System Ratunkowy</title>
+    <link rel="stylesheet" href="{% static 'assets/nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'assets/Strona-główna.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'assets/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'assets/nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 4.2.6, nicepage.com">
+    <meta property="og:title" content="Help Box System">
+    <meta property="og:description" content="Innowacyjny System Ratunkowy">
+    <meta property="og:image" content="images/HBSlogo.svg">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900">
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "{% static 'assets/images/HBSlogo.svg' %}",
+		"sameAs": [
+				"https://www.facebook.com/helpboxsystem"
+		]
+}</script>
+    <meta name="theme-color" content="#ddedf4">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="{% url 'hbs' %}" data-home-page-title="Strona główna" class="u-body"><header class="u-clearfix u-header u-image u-sticky u-sticky-a07b u-header" id="sec-9ba1" data-image-width="1920" data-image-height="200"><a href="{% url 'hbs' %}" class="u-image u-logo u-image-1" data-image-width="1080" data-image-height="1080">
+        <img src="{% static 'assets/images/HBSlogo.svg' %}" class="u-logo-image u-logo-image-1">
+      </a><nav class="u-align-center u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="SM">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+          <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+            <svg viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="{% url 'hbs' %}" style="padding: 10px 0px;">Strona główna</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="{% url 'hbs' %}#sec-d686" data-page-id="79385575" style="padding: 10px 0px;">O nas</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="{% url 'hbs' %}#sec-2393" data-page-id="79385575" style="padding: 10px 0px;">Kontakt</a>
+</li></ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hbs' %}" style="padding: 10px 0px;">Strona główna</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hbs' %}#sec-d686" data-page-id="79385575" style="padding: 10px 0px;">O nas</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'hbs' %}#sec-2393" data-page-id="79385575" style="padding: 10px 0px;">Kontakt</a>
+</li></ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav><div class="u-hidden-xs u-social-icons u-spacing-10 u-social-icons-1">
+        <a class="u-social-url" title="facebook" target="_blank" href="https://www.facebook.com/helpboxsystem"><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-dff9"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-dff9"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
+        </a>
+      </div></header> 
+    <section class="u-clearfix u-image u-shading u-section-1" id="sec-1d56" data-image-width="1600" data-image-height="900">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h1 class="u-text u-title u-text-1">Help Box System</h1>
+            <h2 class="u-subtitle u-text u-text-2">Innowacyjny system ratunkowy</h2>
+            <a href="{% url 'hbs' %}#sec-d686" data-page-id="79385575" class="u-border-2 u-border-palette-1-base u-btn u-button-style u-btn-1">Przeczytaj o nas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-1 u-section-2" id="sec-9c3c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width-xs u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left-sm u-container-style u-layout-cell u-left-cell u-shape-rectangle u-size-30 u-white u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-1">
+                  <p class="u-text u-text-1">
+                    <span style="font-weight: 700;">Help Box</span> to stworzony przez firmę HBS Polska Sp. z o.o. system skrzyń ratunkowych, którego celem jest rozwiązanie narastającego problemu utonięć w Polsce, poprzez dostarczanie kompleksowych rozwiązań technologicznych oraz sprzętu ratowniczego.
+                  </p>
+                </div>
+              </div>
+              <div class="u-align-left-xs u-container-style u-layout-cell u-right-cell u-size-30 u-white u-layout-cell-2">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <p class="u-text u-text-2"> System
+posiada pozytywne opinie <span style="font-weight: 700;">WOPR</span>
+                    <span style="font-weight: 700;">-u</span> i Straży
+Pożarnej
+oraz innych ośrodków
+zajmujących się ratownictwem wodnym.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-image u-section-3" id="sec-d686" data-image-width="1029" data-image-height="767">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-30">
+                <div class="u-layout-row">
+                  <div class="u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-1">
+                      <h2 class="u-text u-text-palette-1-base u-text-1">Gwarantujemy najwyższą jakość bezpieczeństwa</h2>
+                      <div class="u-video u-video-contain u-video-1">
+                        <div class="embed-responsive embed-responsive-1">
+                          <video controls>
+							<source src="{% static 'assets/hbsmovie.mp4' %}">
+						  </video>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30">
+                <div class="u-layout-col">
+                  <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-2">
+                      <h3 class="u-text u-text-palette-1-base u-text-2">O nas</h3>
+                      <p class="u-text u-text-3">
+                        <span class="u-text-body-alt-color"> Firma
+HBS Polska jest właścicielem i pomysłodawcą innowacyjnego systemu
+skrzyń ratunkowych Help Box (zastrzeżony wzór
+użytkowy), dzięki któremu
+każdy będzie w stanie skutecznie udzielić tonącemu
+pomocy ratowniczej, a następnie przedmedycznej.&nbsp;<br>
+                          <br>Wystarczy
+wcisnąć znajdujący się na froncie skrzyni przycisk alarmowy, aby
+powiadomić odpowiednie służby ratunkowe i uzyskać dostęp do
+znajdującego się wewnątrz ekwipunku ratunkowego.&nbsp;&nbsp;
+                        </span>
+                        <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-1 u-section-4" id="sec-3a7d">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h2 class="u-text u-text-1">Zalety systemu</h2>
+            <p class="u-text u-text-2"> Największą
+zaletą systemu jest skrócony
+do minimum czas reakcji każdej osoby znajdującej się w pobliżu
+miejsca zdarzenia.&nbsp;</p>
+            <div class="u-clearfix u-expanded-width-sm u-expanded-width-xs u-gutter-20 u-layout-wrap u-layout-wrap-1">
+              <div class="u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-2">
+                      <p class="u-text u-text-3"> Help
+Box jest
+systemem w pełni autonomicznym, ponieważ posiada własne źródło
+energii w postaci
+paneli
+fotowoltaicznych. Dzięki temu jest nie tylko niezawodny, ale i
+wpisuje się w politykę korzystania z odnawialnych źródeł energii
+(OZE).&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                    <div class="u-container-layout u-container-layout-3">
+                      <p class="u-text u-text-4"> Będący
+integralną częścią systemu zestaw inteligentnych
+kamer wysokiej
+rozdzielczości można podłączyć do monitoringu miejskiego lub
+systemu Smart City, aby na bieżąco monitorować okolicę i
+wspomagać akcje ratownicze.</p>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
+                    <div class="u-container-layout u-container-layout-4">
+                      <p class="u-text u-text-5"> W
+ramach dodatkowego wyposażenia,
+na zamówienie
+administratora akwenu, możliwe jest zamontowanie stacji meteo, która
+pozwoli na zbieranie takich danych, jak jakość powietrza, siła
+wiatru, ciśnienie, promieniowanie i wiele innych.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-border-1 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
+        <div class="u-border-1 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-2"></div>
+        <h6 class="u-text u-text-6"> Wszystko
+to składa się na produkt, który
+pozwoli na ratowanie ludzkiego życia w miejscach, które
+do tej pory nie były w żaden sposób
+chronione i w których dochodziło do tragedii. Dzięki zamontowaniu
+systemu, wszystkie środki niezbędne do podjęcia akcji ratunkowej i
+powiadomienia odpowiednich służb będą na wyciągnięcie ręki.</h6>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-section-5" id="sec-dcbd">
+      <div class="u-carousel u-expanded-width u-gallery u-gallery-slider u-layout-carousel u-lightbox u-show-text-on-hover u-gallery-1" id="carousel-6369" data-interval="5000" data-u-ride="carousel">
+        <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
+          <li data-u-target="#carousel-6369" data-u-slide-to="0" class="u-active u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+          <li data-u-target="#carousel-6369" data-u-slide-to="1" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+          <li data-u-target="#carousel-6369" data-u-slide-to="2" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+          <li data-u-target="#carousel-6369" data-u-slide-to="3" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+          <li data-u-target="#carousel-6369" data-u-slide-to="4" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+          <li data-u-target="#carousel-6369" data-u-slide-to="5" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+        </ol>
+        <div class="u-carousel-inner u-gallery-inner u-gallery-inner-1" role="listbox">
+          <div class="u-active u-carousel-item u-effect-fade u-gallery-item u-shape-rectangle u-carousel-item-1">
+            <div class="u-back-slide" data-image-width="1600" data-image-height="900">
+              <img class="u-back-image u-expanded" src="{% static 'assets/images/2022-012520Budka2520Zdrowia_Klatka_2.jpg' %}">
+            </div>
+            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-1">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-carousel-item u-effect-fade u-gallery-item u-shape-rectangle u-carousel-item-2">
+            <div class="u-back-slide" data-image-width="1600" data-image-height="900">
+              <img class="u-back-image u-expanded" src="{% static 'assets/images/2022-012520Budka2520Zdrowia_Klatka_7.jpg' %}">
+            </div>
+            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-2">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-carousel-item u-effect-fade u-gallery-item u-shape-rectangle u-carousel-item-3">
+            <div class="u-back-slide" data-image-width="1600" data-image-height="900">
+              <img class="u-back-image u-expanded" src="{% static 'assets/images/2022-012520Budka2520Zdrowia_Klatka_1.jpg' %}">
+            </div>
+            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-3">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-carousel-item u-effect-fade u-gallery-item u-shape-rectangle u-carousel-item-4">
+            <div class="u-back-slide" data-image-width="1600" data-image-height="900">
+              <img class="u-back-image u-expanded" src="{% static 'assets/images/2022-012520Budka2520Zdrowia_Klatka_10.jpg' %}">
+            </div>
+            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-4">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-carousel-item u-effect-fade u-gallery-item u-shape-rectangle u-carousel-item-5">
+            <div class="u-back-slide u-back-slide-5" data-image-width="1600" data-image-height="900">
+              <img src="{% static 'assets/images/2022-012520Budka2520Zdrowia_Klatka_9.jpg' %}" alt="" data-image-width="2000" data-image-height="1333" class="u-back-image u-expanded">
+            </div>
+            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-5">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-carousel-item u-effect-fade u-gallery-item u-shape-rectangle u-carousel-item-6">
+            <div class="u-back-slide" data-image-width="1600" data-image-height="900">
+              <img class="u-back-image u-expanded" src="{% static 'assets/images/2022-012520Budka2520Zdrowia_Klatka_11.jpg' %}">
+            </div>
+            <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-6">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+        </div>
+        <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1" href="#carousel-6369" role="button" data-u-slide="prev">
+          <span aria-hidden="true">
+            <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+          </span>
+          <span class="sr-only">
+            <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+          </span>
+        </a>
+        <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2" href="#carousel-6369" role="button" data-u-slide="next">
+          <span aria-hidden="true">
+            <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+          </span>
+          <span class="sr-only">
+            <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+          </span>
+        </a>
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-1 u-section-6" id="sec-2393">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-valign-top-xs u-container-layout-1">
+                  <h2 class="u-text u-text-1">Dane firmy</h2>
+                  <p class="u-text u-text-2"><span class="u-file-icon u-icon u-text-palette-1-base"><img src="{% static 'assets/images/10.png' %}" alt=""></span>&nbsp;​HBS POLSKA SP. z o.o.
+                  </p>
+                  <p class="u-text u-text-3"><span class="u-file-icon u-icon u-text-palette-1-base u-icon-2"><img src="{% static 'assets/images/11.png' %}" alt=""></span>&nbsp; ul. Armii Krajowej 14A/5, 50-541 Wrocław
+                  </p>
+                  <p class="u-text u-text-4"><span class="u-file-icon u-icon u-text-palette-1-base u-icon-3"><img src="{% static 'assets/images/12.png' %}" alt=""></span>&nbsp;NIP: 899-290-09-45
+                  </p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <h2 class="u-text u-text-5">Dane kontaktowe</h2>
+                  <p class="u-text u-text-6">Jeśli masz pytania zadzwoń lub napisz maila.</p>
+                  <p class="u-text u-text-white u-text-7"><span class="u-file-icon u-icon u-text-palette-1-base u-icon-4"><img src="{% static 'assets/images/13.png' %}" alt=""></span>&nbsp;+48&nbsp;695 150 846
+                  </p>
+                  <p class="u-text u-text-8"><span class="u-file-icon u-icon u-text-palette-1-base u-icon-5"><img src="{% static 'assets/images/14.png' %}" alt=""></span>&nbsp;+48&nbsp;735 000 019
+                  </p>
+                  <p class="u-text u-text-9"><span class="u-file-icon u-icon u-text-palette-1-base u-icon-6"><img src="{% static 'assets/images/15.png' %}" alt=""></span>&nbsp;​info@hbspolska.org.pl
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-clearfix u-footer u-image" id="sec-0c21"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-align-center u-container-style u-group u-group-1">
+          <div class="u-container-layout u-valign-middle u-container-layout-1">
+            <p class="u-small-text u-text u-text-body-alt-color u-text-variant u-text-1">Copyright ©&nbsp;2022 | HBS Polska SP. z.o.o Wszelkie prawa zastrzeżone&nbsp;</p>
+          </div>
+        </div>
+      </div></footer>
+  
+</body></html>
