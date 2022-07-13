@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import socket
 from pathlib import Path
 import os
 
@@ -52,7 +52,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+
 ROOT_URLCONF = 'hbs.urls'
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 TEMPLATES = [
     {
@@ -78,11 +81,14 @@ WSGI_APPLICATION = 'hbs.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'hbs',
+        'USER': 'hbs',
+        'PASSWORD': 'hbs24865',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -133,3 +139,11 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
+EMAIL_USE_SSL = True  # use port 465
+EMAIL_HOST = 'smtp.hbspolska.org.pl'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'serwis@hbspolska.org.pl'
+EMAIL_HOST_PASSWORD = 'seHBS.22'
+DEFAULT_FROM_EMAIL = 'Info | HBSPolska <serwis@hbspolska.org.pl>'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

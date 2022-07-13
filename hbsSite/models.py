@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+
+class Kontakt(models.Model):
+    imie = models.CharField(max_length=50)
+    email = models.EmailField()
+    tresc = models.TextField(max_length=255)
