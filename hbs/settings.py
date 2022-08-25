@@ -81,12 +81,8 @@ WSGI_APPLICATION = 'hbs.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'hbs',
-        'USER': 'hbs',
-        'PASSWORD': 'hbs24865',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
 }
 
@@ -141,9 +137,8 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 EMAIL_USE_SSL = True  # use port 465
-EMAIL_HOST = 'smtp.hbspolska.org.pl'
+EMAIL_HOST = 'server530585.nazwa.pl'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'serwis@hbspolska.org.pl'
 EMAIL_HOST_PASSWORD = 'seHBS.22'
 DEFAULT_FROM_EMAIL = 'Info | HBSPolska <serwis@hbspolska.org.pl>'
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

@@ -12,12 +12,14 @@ from hbs.settings import DEFAULT_FROM_EMAIL
 from .forms import ContactForm
 
 
+class SystemView(View):
+    def get(self, request):
+        return render(request, 'sites/O-systemie.html')
+
 class HBSView(View):
     def get(self, request):
         context = {
-            'title': 'Skontaktuj sie z nami',
             'kontakt': ContactForm(),
-            'description': 'Nie czekaj tylko skontaktuj sie z nami.',
         }
         return render(request, 'sites/index.html', context)
 
@@ -44,7 +46,7 @@ class HBSView(View):
                 subject='Wiadomość z formularza kontaktowego HBS.',
                 message='',
                 from_email=DEFAULT_FROM_EMAIL,
-                recipient_list=['damianpielka@o2.pl'],
+                recipient_list=['info@hbspolska.org.pl'],
                 fail_silently=False,
                 html_message=message
             )
